@@ -1,22 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 33, in script
-    jump project_giggles
-ScriptError: could not find label 'project_giggles'.
+  File "game/script.rpy", line 17, in script
+    kickoff_scientist "Here at LAB-117, our project, PROJECT MONSTER, aims to create a fetus capable of morphing into any lifeform as we please."
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'kickoff_music.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 33, in script
-    jump project_giggles
-  File "C:\Users\USER\Desktop\RENPY\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\USER\Desktop\RENPY\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'project_giggles'.
+  File "game/script.rpy", line 17, in script
+    kickoff_scientist "Here at LAB-117, our project, PROJECT MONSTER, aims to create a fetus capable of morphing into any lifeform as we please."
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\ast.py", line 671, in execute
+    statement_name("say")
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
+    clear=clear)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\display\core.py", line 3130, in interact_core
+    renpy.audio.audio.interact()
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1107, in interact
+    periodic()
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1060, in periodic
+    six.reraise(exc[0], exc[1], exc[2])
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1038, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 979, in periodic_pass
+    c.periodic()
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 457, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\audio\audio.py", line 73, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\user\Desktop\CheatsyKoopa34\DDLC Modding\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'kickoff_music.mp3'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 PROJECT MONSTER 1.0
-Thu Jun 25 23:49:01 2020
+Fri Jun 26 03:43:58 2020

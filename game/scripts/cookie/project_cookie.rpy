@@ -22,8 +22,9 @@ image c3 = im.Scale("cookie/adultdog.png", 864, 612)
 
 label project_cookie:
     
-    play music "sounds/cookie/dreams.mp3" loop
     scene black
+    with fade
+    play music "sounds/cookie/dreams.mp3" loop
     
     mc "We’ve tested and looked up every method we could, and I’m confident that this would work."
     sc "Then what are we waiting for? Let's do this!"
@@ -45,6 +46,7 @@ label project_cookie:
     "After the light faded, I quickly ran up to where the specimen was placed earlier."
     
     scene under_lab
+    with fade
     show s1 at center
     sc "So? What happened?"
     mc "I don't know... The creature isn't here anymore."
@@ -56,6 +58,7 @@ label project_cookie:
     mc "What was that!?"
     
     scene lab_table
+    with fade
     
     show c2 at center
     
@@ -70,6 +73,7 @@ label project_cookie:
     mc "Here take some food too, you're probably hungry."
     
     scene under_lab
+    with fade
     
     play music "sounds/cookie/happyalley.mp3" loop
     "We were in awe of the result. The creature had slowly became comfortable with us. This experiment is a big success!"
@@ -82,11 +86,13 @@ label project_cookie:
     stop music fadeout 1.0   
     
     scene black
+    with fade
     
     "Two weeks have passed since the creation of Cookie"
     play music "sounds/cookie/dreams.mp3" loop
     
     scene house
+    with fade
     
     c "*BARK!*"
     
@@ -104,6 +110,7 @@ label project_cookie:
     c "I'll explain later! We have to go now!"
     
     scene car
+    with fade
     
     show c1 at left
     c "He's in that car!"
@@ -155,6 +162,7 @@ label project_cookie:
     c "Let's get started as soon as possible, shall we?"
     
     scene black
+    with fade
     "After almost two months..."
     
     scene house
@@ -177,6 +185,7 @@ label project_cookie:
     sc "I can't agree any less with that, but today, you've earned yourself a well-deserved break!"
     
     scene black
+    with fade
     
     "And so our creation had led on to be the greatest hero in their community."
     "Donning the name, Canine Hero, what was originally supposed to be just an ordinary dog had turned out to be a superhero."

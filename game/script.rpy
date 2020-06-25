@@ -6,16 +6,21 @@
 define kickoff_scientist = Character("Scientist")
 image bg_kickoff = im.Scale("bg_lab_kickoff.png", 1280, 720)
 
-
 # The game starts here.
 
 label start:
-
+    
+    stop music fadeout 1.0
+    play music "sounds/kickoff_music.mp3" loop
     scene bg_kickoff
+    with fade
 
+    show s1 at center
     kickoff_scientist "Here at LAB-117, our project, PROJECT MONSTER, aims to create a fetus capable of morphing into any lifeform as we please."
     kickoff_scientist "With such creation, any lifeform beneficial to mankind may be within our grasp."
+    show s2 at center
     kickoff_scientist "As it stands, our team has successfully created the monstrous fetus, a colorless blob-like fetus cultured inside our incubator pod, that we were hoping for."
+    show s4 at center
     kickoff_scientist "Now, PROJECT MONSTER should be taken towards another direction and another team, so it can be tested and observed."
 
     menu:
