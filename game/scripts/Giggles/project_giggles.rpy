@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define narrator = Character("Narrator")
+define n = Character("Narrator")
 define scientist = Character("Scientist Kylan")
 define creation = Character("Creation")
 define Giggles = Character("Giggles")
@@ -71,11 +71,11 @@ label project_giggles:
 
     #scene 1 start
 
-    narrator "After a long day from work. The scientist decided to return to his beach house near the lab"
+    n "After a long day from work. The scientist decided to return to his beach house near the lab"
 
-    narrator "and bring his creation home. He wanted to love and care for it as if it was his own child."
+    n "and bring his creation home. He wanted to love and care for it as if it was his own child."
 
-    narrator "The reason for this is because of the amount of time and money he placed into this project"
+    n "The reason for this is because of the amount of time and money he placed into this project"
 
     scene desk
     with dissolve
@@ -107,7 +107,7 @@ label project_giggles:
 
     hide blob with dissolve
 
-    narrator "The creation of the scientist started to change appearance"
+    n "The creation of the scientist started to change appearance"
 
     scene desk
 
@@ -256,9 +256,9 @@ label project_giggles:
     scene desk
     with dissolve
 
-    narrator "It has been six months since the presentation."
+    n "It has been six months since the presentation."
 
-    narrator "The scientist has tried several times to recreate a creature like Giggles but with super powers."
+    n "The scientist has tried several times to recreate a creature like Giggles but with super powers."
 
     show Sadscientist:
         xalign 0.75
@@ -368,11 +368,11 @@ label project_giggles:
 
     stop music fadeout 1
 
-    narrator "Taking his creation's words to heart"
+    n "Taking his creation's words to heart"
 
-    narrator "The scientist decided not to let the expectations of others get the better of him"
+    n "The scientist decided not to let the expectations of others get the better of him"
 
-    narrator "He also has decided that tomorrow he would prepare Giggles something in the kitchen"
+    n "He also has decided that tomorrow he would prepare Giggles something in the kitchen"
 
     #end scene 2
 
@@ -384,7 +384,7 @@ label project_giggles:
     scene kitchen
     with fade
 
-    narrator "The scientist decided to research on a dish to cook for Giggles and he worked hard to prepare it."
+    n "The scientist decided to research on a dish to cook for Giggles and he worked hard to prepare it."
 
     show Happyscientist:
         xalign 0.75
@@ -461,7 +461,7 @@ label project_giggles:
     scene kitchen
     with fade
 
-    narrator "The scientist decided to keep his head high and approach this problem with a calm and optimistic mindset."
+    n "The scientist decided to keep his head high and approach this problem with a calm and optimistic mindset."
 
     show neutralscientist:
         xalign 0.25
@@ -672,9 +672,9 @@ label project_giggles:
 
     scene bedroom with fade
 
-    narrator "The scientist feels excited because after days of no sleep and hard work a proper cure for Giggles' illness is finally made."
+    n "The scientist feels excited because after days of no sleep and hard work a proper cure for Giggles' illness is finally made."
 
-    narrator "But will this one actual heal Giggles or will it fail again?"
+    n "But will this one actual heal Giggles or will it fail again?"
 
     show Happyscientist:
         xalign 0.25
