@@ -4,7 +4,7 @@
 # name of the character.
 
 define kickoff_scientist = Character("Scientist")
-image bg_kickoff = im.Scale("bg_lab_kickoff.jpg", 1280, 720)
+image bg_kickoff = im.Scale("bg_lab_kickoff.png", 1280, 720)
 
 
 # The game starts here.
