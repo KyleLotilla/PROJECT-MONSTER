@@ -685,6 +685,6 @@ label project_fetch:
 
     "Credits: "
     "Music: Inspiring Science Technology Documentary by R-Production"
-    "Background: Panait Alexandra from Pinterest"
+    "Background: Kim Smith from Behance from Pinterest"
 
     return
